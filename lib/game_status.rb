@@ -32,5 +32,11 @@ def over?(board)
 end
 
 def winner(board)
-  board[won?(board).detect{|index| position_taken?(board, index)}]
+  if won?(board).nil?
+    won?(board)
+  else
+    board[won?(board).detect{|index| position_taken?(board, index)}]
+  end
 end
+
+#board[won?(board).detect{|index| position_taken?(board, index)}]
