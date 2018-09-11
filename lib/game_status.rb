@@ -44,7 +44,7 @@ def over?(board)
 end
 
 def winner(board)
-  won?(board).detect{|index| position_taken?(board, index)}
+  board[won?(board).detect{|index| position_taken?(board, index)}]
 end
 
 #if board[won?(board)[0]] == "X"
