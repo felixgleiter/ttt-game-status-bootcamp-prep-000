@@ -42,3 +42,12 @@ def over?(board)
     false
   end
 end
+
+def winner(board)
+  if won?(board)[0] == "X"
+    "X"
+  elsif won?(board)[0] == "O"
+    "O"
+  else
+    nil
+end
