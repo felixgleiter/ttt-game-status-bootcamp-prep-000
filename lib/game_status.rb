@@ -38,5 +38,3 @@ def winner(board)
     board[won?(board).detect{|index| position_taken?(board, index)}]
   end
 end
-
-#board[won?(board).detect{|index| position_taken?(board, index)}]
