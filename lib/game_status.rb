@@ -44,7 +44,7 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board)[0] == "X"
+  if won?(board) == true && won?(board)[0] == "X"
     "X"
   elsif won?(board)[0] == "O"
     "O"
