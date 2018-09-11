@@ -24,5 +24,5 @@ def won?(board)
 end
 
 def full?(board)
-  !board.any?{|cell| cell = " "}
+  board.any?{|cell| cell = " "}
 end
