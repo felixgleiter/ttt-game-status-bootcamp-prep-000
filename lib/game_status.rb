@@ -33,7 +33,7 @@ end
 
 def winner(board)
   if won?(board).nil?
-    won?(board)
+    nil
   else
     board[won?(board).detect{|index| position_taken?(board, index)}]
   end
