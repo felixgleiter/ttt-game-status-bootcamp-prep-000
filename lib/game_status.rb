@@ -49,6 +49,6 @@ def winner(board)
   elsif board[won?(board)[0]] == "O"
     "O"
   else 
-    won?(board)[3]
+    return nil
   end
 end
