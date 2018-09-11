@@ -36,11 +36,7 @@ def draw?(board)
 end
 
 def over?(board)
-  if won?(board) != nil || draw?(board) == true
-    true
-  else
-    false
-  end
+  won?(board) != nil || draw?(board) == true
 end
 
 def winner(board)
