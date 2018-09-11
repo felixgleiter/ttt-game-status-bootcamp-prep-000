@@ -27,7 +27,7 @@ def full?(board)
   [0,1,2,3,4,5,6,7,8].all?{|index| position_taken?(board, index)}
 end
 
-def draw(board)
+def draw?(board)
   if won?(board) == false && full?(board) == true
     true
   else
