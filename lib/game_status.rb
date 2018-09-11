@@ -46,11 +46,3 @@ end
 def winner(board)
   board[won?(board).detect{|index| position_taken?(board, index)}]
 end
-
-#if board[won?(board)[0]] == "X"
-    #"X"
-  #elsif board[won?(board)[0]] == "O"
-    #"O"
-  #elsif won?(board).nil?
-    #won?(board)
-  #end
